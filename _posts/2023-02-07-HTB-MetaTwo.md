@@ -324,7 +324,7 @@ local: send_email.php remote: send_email.php
 1126 bytes received in 0.00 secs (807.3490 kB/s)
 ```
 
-Si miramos el contenido del archivo podemos ver que hay credenciales para el usuario jnelson el cual es un usuario valido a nivel de sistema que vimos en el archivo /etc/passwd
+Si miramos el contenido del archivo podemos ver que hay credenciales para el usuario jnelson el cual es un usuario valido a nivel de sistema que vimos anteriormente en el archivo /etc/passwd
 
 ```bash
 ❯ cat send_email.php |grep '$mail'
