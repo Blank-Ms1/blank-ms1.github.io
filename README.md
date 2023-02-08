@@ -1,2 +1,2 @@
 # Blog
-Archivos de configuracion de  la web blank-ms1.github.io
+Archivos de configuracion de  la web https://blank-ms1.github.io
