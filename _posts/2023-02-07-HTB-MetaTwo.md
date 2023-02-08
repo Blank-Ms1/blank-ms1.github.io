@@ -582,4 +582,4 @@ root@meta2:/tmp/privEsc# cat /root/root.txt
 99c52de8086cafbbd2e6e236fe7b3bbf
 root@meta2:/tmp/privEsc# 
 ```
-
+Gracias Por leer
