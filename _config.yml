@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 
 title: Blank                          # the main title
 
-tagline: Write Up   # it will display as the sub-title
+tagline: Hacking and CFTS enthusiasts   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Entusiaste del hacking y los Ctfs.
