@@ -2,7 +2,7 @@
 Hoy Estaremos Realizando la maquina MetaTwo de la plataforma de Hack The Box, La Cual es de dificultad Facil, Esta Maquina Se va a dividir en 3 partes Enumeracion, Explotacion y escalada de privilegios
 
 ---
-![](/assets/img/machine.png)
+![](/assets/img/metatwo/machine.png)
 
 
 
@@ -53,14 +53,14 @@ Como nuestra maquina no sabe a que resolver tenemos que agregarlo al /etc/hosts,
 ```
 
 Ahora si Veamos la pagina web
-![](/assets/img/w.png)
+![](/assets/img/metatwo/w.png)
  Al acceder vemos que el cms que corre por detras es un wordpress asi que empezemos A mirar un poco la web, en la pagina principal vemos un link Que nos lleva a http://metapress.htb/events/ si vamos a este directorio y vemos el codigo fuente vemos que ese expone la version de un puglin 'bookingpress 1.0.10'
 
-![](/assets/img/web.png)
+![](/assets/img/metatwo/web.png)
 
 Una busqueda rapida sobre este plugin en google nos da estos resultados
 
-![](/assets/img/plugin.png)
+![](/assets/img/metatwo/plugin.png)
 
 En esta [pagina](https://wpscan.com/vulnerability/388cd42d-b61a-42a4-8604-99b812db2357) nos dan un Poc (prueba de concepto) La cual utilizaremos para comprobar si el plugin es vulnerable
 Para que esto carga util funcione Necesitamos Cambiar el valor del _wpnonce por el valor que tenga en la pagina, solo es ver el codigo fuente de la pagina http://metapress.htb/events/ y filtrar por el _wpnonce y nos dara el valor, una vez cambiado este valor, mandamos la peticion y vemos que el plugin el vulnerable a inyeccion sql
@@ -143,10 +143,10 @@ partylikearockstar (?)
 ```
 Obtenemos una contraseña en texto plano, Intentemos usarla para logearnos en wordpress, de la inyeccion sql obtuvimos dos usuarios admin y manager probemos para cual funciona.
 
-![](/assets/img/auth.png)
+![](/assets/img/metatwo/auth.png)
 
 Y es la contraseña para el usuario manager, Enumerando el wordpress No podemos obtener una shell facilmente cambiando la apariencia de algun archivo, Veamos Que version de wordpress Corre en esta pagina para ver si tiene vulnerabilidades.
-![](/assets/img/wo.png)
+![](/assets/img/metatwo/wo.png)
  Buscando en google me encontre con que la version del wordpress que esta corriendo es vulnerable a xxe (Xml External Entity) La cual nos permite leer archivos del sistema Atraves de la subida de un archivo .wav,  
 
 En esta [pagina](https://blog.wpsec.com/wordpress-xxe-in-media-library-cve-2021-29447/) Podemos ver los dos archivos que tenemos que crear para poder explotar esta vulnerabilidad correctamente.
@@ -166,7 +166,7 @@ $ echo -en 'RIFF\xb8\x00\x00\x00WAVEiXML\x7b\x00\x00\x00<?xml version="1.0"?><!D
 
 Subimos el archivo
 
-![](/assets/img/pa.png)
+![](/assets/img/metatwo/pa.png)
 
 Y nos llega esta peticion con la data codificada en base64
 
