@@ -1,6 +1,6 @@
 <head>
   <meta property="og:title" content="Internal">
-  <meta property="og:description" content="Write Up">
+  <meta property="og:description" content="Write up De la maquina internal de dificultad dificil de la plataforma de TryHackMe.">
   <meta property="og:image" content="https://tryhackme-images.s3.amazonaws.com/room-icons/222b3e855f88a482c1267748f76f90e0.jpeg">
 </head>
 
