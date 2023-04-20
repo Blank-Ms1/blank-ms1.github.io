@@ -23,8 +23,8 @@ title: Blank                          # the main title
 
 tagline: Hacking and CFTS enthusiasts   # it will display as the sub-title
 
-description: >-                        # used by seo meta and the atom feed
-  Entusiaste del hacking y los Ctfs.
+  #description: >-                        # used by seo meta and the atom feed
+  #Entusiasta del hacking y los Ctfs.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://blank-ms1.github.io'

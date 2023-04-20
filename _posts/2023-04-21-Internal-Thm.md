@@ -1,8 +1,10 @@
 ---
 title: Internal
-description: Write up De la maquina internal de dificultad dificil de la plataforma de TryHackMe.
 image: https://tryhackme-images.s3.amazonaws.com/room-icons/222b3e855f88a482c1267748f76f90e0.jpeg
 ---
+<head>
+  <meta name="description" content="Write up De la maquina internal de dificultad dificil de la plataforma de TryHackMe.">
+</head>
 
 
 Write up De la maquina internal de dificultad dificil de la plataforma de TryHackMe.
