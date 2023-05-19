@@ -1,4 +1,4 @@
-Write Up de la maquina shared de la plataforma de HackTheBox, una maquina de dificultad dificil.
+Write Up de la maquina shared de la plataforma de HackTheBox, una maquina de dificultad Media.
 
 ![](/assets/img/shared/shared.png)
 
