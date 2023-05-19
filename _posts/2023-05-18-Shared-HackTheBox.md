@@ -1,7 +1,3 @@
----
-tags: [Linux, SQL Injection, ipython, redis, LUA sandbox bypass]
----
-
 Write Up de la maquina shared de la plataforma de HackTheBox, una maquina de dificultad dificil.
 
 ![](/assets/img/shared/shared.png)
