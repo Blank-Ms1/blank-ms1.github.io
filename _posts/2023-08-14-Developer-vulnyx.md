@@ -55,7 +55,7 @@ Voy a crear un script simple en python para ir viendo los archivos que me intere
 
 <span class="k">if</span> <span class="nb">__name__</span> <span class="o">==</span> <span class="s2">'__main__'</span><span class="p">:</span>
     <span class="n">getFile</span><span class="p">()</span>
-</code></pre></div><br></span>
+</code></pre>
 
 Ejecutamos el script y como <code class="language-plaintext highlighter-rouge">argumento</code> le pasamos el <code class="language-plaintext highlighter-rouge">archivo</code> que deseamos leer.
 
