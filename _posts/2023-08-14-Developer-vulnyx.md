@@ -41,6 +41,7 @@ Pobramos esto en la Web y funciona Tenemos <code class="language-plaintext highl
 Voy a crear un script simple en python para ir viendo los archivos que me interesan.
 <pre class="highlight">
 <code><span class="c1">#!/usr/bin/python3
+
 </span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
